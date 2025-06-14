@@ -29,14 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     feedbackDiv.style.display = "block";
 
-    if (isValid) {
-      feedbackDiv.textContent = "Registration successful!";
-      feedbackDiv.style.color = "#28a745";
-      feedbackDiv.style.backgroundColor = "#d4edda";
-    } else {
-      feedbackDiv.innerHTML = messages.join("<br>");
-      feedbackDiv.style.color = "#d8000c";
-      feedbackDiv.style.backgroundColor = "#ffbaba";
-    }
-  });
+if (isValid) {
+  feedbackDiv.textContent = "Registration successful!";
+  feedbackDiv.style.color = "#28a745"; // green text
+  feedbackDiv.style.backgroundColor = "#d4edda"; // ✅ add light green background
+} else {
+  feedbackDiv.innerHTML = messages.join("<br>");
+  feedbackDiv.style.color = "#dc3545"; // red text
+  feedbackDiv.style.backgroundColor = "#f8d7da"; // ✅ add light red background
+}
+ });
 });
